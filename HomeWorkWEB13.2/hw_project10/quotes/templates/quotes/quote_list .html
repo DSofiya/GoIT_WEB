@@ -1,0 +1,25 @@
+{% extends 'quotes/base.html' %}
+{% load extract %}
+
+{% block content %}
+<h2 style="color: green; text-align: center;">List quotes</h2>
+<h2 style="color: green; font-family:'Raleway'; font-size: large; "> Tag - {{ tag }}</h2>
+<div class="row">
+    <div class="col-md-8">
+        {% for quote in quotes %}
+            {% if tag in quote.tags %}
+                <div class="quote" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <span class="text" itemprop="text">
+                        {{ quote.quote }}
+                    </span>
+                    <span>by <small class="author" itemprop="author">{{ quote.author|author }}</small>
+                        <a href="{% url 'quotes:author' pk=quote.author %}">(about)</a>
+                    </span>
+                
+                </div>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
