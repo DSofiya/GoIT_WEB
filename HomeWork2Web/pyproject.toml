@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "HomeWork2Web"
+version = "0.1.0"
+description = ""
+authors = ["DSofiya <134394822+DSofiya@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dateparser = "^1.0.0"
+prompt-toolkit = "^3.0.21"
+folium = "^0.14.0"
+requests = "^2.26.0"
+pygame = "^2.0.1"
+colorama = "^0.4.4"
+dill = "^0.3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "homeworkweb6"
+version = "0.1.0"
+description = ""
+authors = ["DSofiya <134394822+DSofiya@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2 = "^2.9.9"
+faker = "^19.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
